@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 52.75,
-              "y": 285
+              "x": -37.25,
+              "y": 340
             },
             "size": {
               "width": 112.5,
@@ -659,8 +659,8 @@
             },
             "vertices": [
               {
-                "x": 250,
-                "y": 270
+                "x": 200,
+                "y": 290
               }
             ]
           },
@@ -711,8 +711,8 @@
             },
             "vertices": [
               {
-                "x": 250,
-                "y": 360
+                "x": 210,
+                "y": 370
               }
             ]
           },
@@ -977,58 +977,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "DB Transaction Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "DB Transaction Request"
-            ],
-            "id": "0d2ace33-b397-452f-92ce-950be19d1050",
-            "source": {
-              "x": 430,
-              "y": 310
-            },
-            "target": {
-              "cell": "b171b1fa-2681-4daf-96e5-43f15f3511d4",
-              "port": "9736100d-7fb5-4908-9695-638745c0fb7c"
-            },
-            "vertices": [
-              {
-                "x": 690,
-                "y": 250
-              }
-            ]
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1095,6 +1043,245 @@
                 "y": 310
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DB Transaction Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ed08db28-8a35-4fd3-a7e6-7b284d1f4a9d",
+                  "title": "Data Exposed",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Sensitive data is intercepted or exposed during\ntransmission.",
+                  "mitigation": "- Gunakan enkripsi untuk data dalam transit.\n○ Hindari mengirim data sensitif dalam parameter URL.\n○ Batasi akses hanya untuk personel yang berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "DB Transaction Request"
+            ],
+            "id": "0d2ace33-b397-452f-92ce-950be19d1050",
+            "source": {
+              "x": 430,
+              "y": 310
+            },
+            "target": {
+              "cell": "b171b1fa-2681-4daf-96e5-43f15f3511d4",
+              "port": "9736100d-7fb5-4908-9695-638745c0fb7c"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 310
+              },
+              {
+                "x": 690,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": -37,
+              "y": 180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Seller"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "2120af28-bda5-4b18-92cf-dec41ea02b70"
+                },
+                {
+                  "group": "right",
+                  "id": "9e6e0ef1-d4cd-43a3-8a7d-18ef2be2e0e5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "dd0345da-68f4-4cd4-9e5b-6bf7be181c93"
+                },
+                {
+                  "group": "left",
+                  "id": "cc5d31ef-2708-4f20-bb8f-f3e5d5c54d6c"
+                }
+              ]
+            },
+            "id": "793221d1-1b67-4cc5-aa26-a52dc19e04e5",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Seller",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Order Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Order Request"
+            ],
+            "id": "3d402e6a-cba4-4a17-b549-160bb028dafd",
+            "source": {
+              "x": 80,
+              "y": 210
+            },
+            "target": {
+              "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
+              "port": "534d045c-0ff6-4ace-9b99-20f55e2207da"
+            }
           }
         ],
         "description": "e-payment diagram"
@@ -1102,6 +1289,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
