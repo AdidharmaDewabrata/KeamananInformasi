@@ -730,8 +730,8 @@
           },
           {
             "position": {
-              "x": 730,
-              "y": -25
+              "x": 795,
+              "y": 40
             },
             "size": {
               "width": 120,
@@ -1592,6 +1592,58 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Response"
+            ],
+            "id": "cf545f87-de2a-4f24-8446-46c8d6ec9477",
+            "source": {
+              "x": 790,
+              "y": 70
+            },
+            "target": {
+              "cell": "9c7165d7-1d4e-42fd-b37b-6f43c5352d4a",
+              "port": "ab77da9b-83c1-423e-8ae2-ae3a96c439de"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1608,15 +1660,21 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "cf545f87-de2a-4f24-8446-46c8d6ec9477",
+            "id": "96cffd2c-dad9-4671-b237-3cfcd25b7c6e",
             "source": {
-              "x": 790,
-              "y": 70
+              "x": 714,
+              "y": 236
             },
             "target": {
-              "cell": "9c7165d7-1d4e-42fd-b37b-6f43c5352d4a",
-              "port": "ab77da9b-83c1-423e-8ae2-ae3a96c439de"
-            }
+              "cell": "9545cfad-0883-4716-9156-d58bb32bd377",
+              "port": "28727592-9fd4-4d0e-8f63-2fc4ed8c613a"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 240
+              }
+            ]
           }
         ],
         "description": "e bank STRIDE"
