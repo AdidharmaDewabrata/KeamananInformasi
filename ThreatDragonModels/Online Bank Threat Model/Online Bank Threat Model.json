@@ -1459,8 +1459,8 @@
             },
             "vertices": [
               {
-                "x": 380,
-                "y": 400
+                "x": 370,
+                "y": 380
               }
             ]
           },
@@ -1502,13 +1502,19 @@
             ],
             "id": "fc02cf3c-4fc4-4b4b-9fe3-4c3992e8ce79",
             "source": {
-              "x": 550,
-              "y": 450
+              "cell": "1bc0ac89-de5a-497e-87db-1510c23ab944",
+              "port": "da6176fb-bdd2-4a9a-9c2b-13e2a687a7e9"
             },
             "target": {
               "cell": "523380a8-38ef-44d3-a6da-4f5a5dc997ed",
               "port": "20b5b9e2-8240-42ac-ba7b-c17c32d8cf02"
-            }
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 450
+              }
+            ]
           }
         ],
         "description": "e bank STRIDE"
