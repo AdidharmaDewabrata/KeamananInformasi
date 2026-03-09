@@ -137,7 +137,7 @@
           {
             "position": {
               "x": 140,
-              "y": 306
+              "y": 186
             },
             "size": {
               "width": 110,
@@ -370,8 +370,8 @@
           },
           {
             "position": {
-              "x": 473,
-              "y": 15
+              "x": 420,
+              "y": -110
             },
             "size": {
               "width": 140,
@@ -1120,52 +1120,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "da3bdcbf-c876-4b98-98bd-0499ce38bad6",
-            "source": {
-              "x": 500,
-              "y": 200
-            },
-            "target": {
-              "cell": "b735cc5f-3298-4dbb-bb1d-34ca5f24b1c3",
-              "port": "20b5b9e2-8240-42ac-ba7b-c17c32d8cf02"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Confirmation",
               "description": "",
               "outOfScope": false,
@@ -1249,6 +1203,108 @@
                 "y": 40
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTP Request"
+            ],
+            "id": "ecc9359b-884b-435d-bc74-f2948c367c00",
+            "source": {
+              "x": 250,
+              "y": 210
+            },
+            "target": {
+              "cell": "9c7165d7-1d4e-42fd-b37b-6f43c5352d4a",
+              "port": "da6176fb-bdd2-4a9a-9c2b-13e2a687a7e9"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 140
+              },
+              {
+                "x": 340,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTP Response"
+            ],
+            "id": "fee316e2-75d0-49e2-849c-a21de8c17417",
+            "source": {
+              "x": 470,
+              "y": 70
+            },
+            "target": {
+              "cell": "b735cc5f-3298-4dbb-bb1d-34ca5f24b1c3",
+              "port": "20b5b9e2-8240-42ac-ba7b-c17c32d8cf02"
+            }
           }
         ],
         "description": "e bank STRIDE"
