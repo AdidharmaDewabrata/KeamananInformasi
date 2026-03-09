@@ -944,7 +944,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Save Transaction Data Request",
+              "name": "DB Transaction Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -958,21 +958,21 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Save Transaction Data Request"
+              "DB Transaction Response"
             ],
-            "id": "0d2ace33-b397-452f-92ce-950be19d1050",
+            "id": "faa7ef10-31f1-4c3a-8623-c238d1e5e4b7",
             "source": {
-              "x": 430,
-              "y": 310
+              "x": 940,
+              "y": 290
             },
             "target": {
-              "cell": "b171b1fa-2681-4daf-96e5-43f15f3511d4",
-              "port": "9736100d-7fb5-4908-9695-638745c0fb7c"
+              "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
+              "port": "da2cdb4a-dd6e-4a50-8fac-c8b02fba6a0b"
             },
             "vertices": [
               {
                 "x": 690,
-                "y": 250
+                "y": 340
               }
             ]
           },
@@ -996,7 +996,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Save Transaction Data Response",
+              "name": "DB Transaction Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1010,21 +1010,89 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Save Transaction Data Response"
+              "DB Transaction Request"
             ],
-            "id": "faa7ef10-31f1-4c3a-8623-c238d1e5e4b7",
+            "id": "0d2ace33-b397-452f-92ce-950be19d1050",
             "source": {
-              "x": 940,
-              "y": 290
+              "x": 430,
+              "y": 310
             },
             "target": {
-              "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
-              "port": "da2cdb4a-dd6e-4a50-8fac-c8b02fba6a0b"
+              "cell": "b171b1fa-2681-4daf-96e5-43f15f3511d4",
+              "port": "9736100d-7fb5-4908-9695-638745c0fb7c"
             },
             "vertices": [
               {
                 "x": 690,
-                "y": 340
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "HTTP Response",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "HTTP Response"
+            ],
+            "id": "700d3959-9bf4-40a5-8b77-64d01c62a7dc",
+            "source": {
+              "x": 160,
+              "y": 90
+            },
+            "target": {
+              "x": 190,
+              "y": 570
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Restricted Network",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Restricted Network"
+            ],
+            "id": "330daa58-b359-4303-85c0-a81668e653f6",
+            "source": {
+              "x": 400,
+              "y": 50
+            },
+            "target": {
+              "x": 460,
+              "y": 610
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 310
               }
             ]
           }
