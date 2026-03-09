@@ -136,8 +136,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 200
+              "x": 622.5,
+              "y": 120
             },
             "size": {
               "width": 110,
@@ -253,8 +253,8 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 370
+              "x": 621.25,
+              "y": 400
             },
             "size": {
               "width": 112.5,
@@ -370,8 +370,8 @@
           },
           {
             "position": {
-              "x": 789,
-              "y": 270
+              "x": 940,
+              "y": 260
             },
             "size": {
               "width": 120,
@@ -763,8 +763,60 @@
             },
             "vertices": [
               {
-                "x": 470,
-                "y": 210
+                "x": 460,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validate Payment Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Validate Payment Response"
+            ],
+            "id": "1b2fe2f2-ac1d-45f6-b6d0-5450ee249238",
+            "source": {
+              "x": 390,
+              "y": 360
+            },
+            "target": {
+              "cell": "1489289b-29bb-461e-81e8-159d480ab696",
+              "port": "131ed122-bca1-49f1-b019-62b4c1b9b5e3"
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 360
               }
             ]
           },
@@ -811,12 +863,12 @@
             },
             "target": {
               "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
-              "port": "da2cdb4a-dd6e-4a50-8fac-c8b02fba6a0b"
+              "port": "534d045c-0ff6-4ace-9b99-20f55e2207da"
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 315
+                "x": 540,
+                "y": 230
               }
             ]
           },
@@ -840,7 +892,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Validate Request",
+              "name": "Validate Payment Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -854,69 +906,127 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Validate Request"
-            ],
-            "id": "1b2fe2f2-ac1d-45f6-b6d0-5450ee249238",
-            "source": {
-              "x": 390,
-              "y": 360
-            },
-            "target": {
-              "cell": "1489289b-29bb-461e-81e8-159d480ab696",
-              "port": "131ed122-bca1-49f1-b019-62b4c1b9b5e3"
-            },
-            "vertices": [
-              {
-                "x": 510,
-                "y": 360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Validate Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Validate Response"
+              "Validate Payment Response"
             ],
             "id": "ffb73b25-1b65-447a-b471-2230451142ad",
             "source": {
-              "x": 620,
-              "y": 400
+              "cell": "1489289b-29bb-461e-81e8-159d480ab696",
+              "port": "131ed122-bca1-49f1-b019-62b4c1b9b5e3"
             },
             "target": {
               "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
               "port": "ecb76849-4e1b-4732-8fd4-0f7c9bfe8f93"
-            }
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Save Transaction Data Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Save Transaction Data Request"
+            ],
+            "id": "0d2ace33-b397-452f-92ce-950be19d1050",
+            "source": {
+              "x": 430,
+              "y": 310
+            },
+            "target": {
+              "cell": "b171b1fa-2681-4daf-96e5-43f15f3511d4",
+              "port": "9736100d-7fb5-4908-9695-638745c0fb7c"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Save Transaction Data Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Save Transaction Data Response"
+            ],
+            "id": "faa7ef10-31f1-4c3a-8623-c238d1e5e4b7",
+            "source": {
+              "x": 940,
+              "y": 290
+            },
+            "target": {
+              "cell": "5f2f6052-046c-4b07-919a-1858d4bb52ca",
+              "port": "da2cdb4a-dd6e-4a50-8fac-c8b02fba6a0b"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 340
+              }
+            ]
           }
         ],
         "description": "e-payment diagram"
